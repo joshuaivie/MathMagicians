@@ -15,7 +15,7 @@
 - HTML
 - CSS
 - Javascript
-- Webpack
+- React
 
 ## Getting Started
 
