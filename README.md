@@ -32,7 +32,7 @@
   git clone https://github.com/joshuaivie/MathMagicians.git
   ```
   ```
-  cd MovieSommelier
+  cd MathMagicians
   ```
 - Install dependencies
 
