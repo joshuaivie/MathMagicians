@@ -42,141 +42,24 @@ export default class Calculator extends Component {
       <div className="calculator">
         <Display display={display} />
         <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="AC" />
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          id="polarity-operator"
-          type="button"
-        >
-          +/-
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          id="modulus-operator"
-          type="button"
-        >
-          %
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button orange"
-          id="division-operator"
-          type="button"
-        >
-          ÷
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          7
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          8
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          9
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button orange"
-          id="multiplication-operator"
-          type="button"
-        >
-          x
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          4
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          5
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          6
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button orange"
-          id="suubtraction-operator"
-          type="button"
-        >
-          -
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          1
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          2
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          3
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button orange"
-          id="addition-operator"
-          type="button"
-        >
-          +
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey span-2"
-          id="number-0"
-          type="button"
-        >
-          0
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          id="decimal"
-          type="button"
-        >
-          .
-        </button>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button orange"
-          id="equality-operator"
-          type="button"
-        >
-          =
-        </button>
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="+/-" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="%" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="÷" orangeColor />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="7" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="8" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="9" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="x" orangeColor />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="4" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="5" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="6" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="-" orangeColor />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="1" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="2" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="3" />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="+" orangeColor />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="0" span={2} />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="." />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="=" orangeColor />
       </div>
     );
   }

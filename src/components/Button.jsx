@@ -14,11 +14,11 @@ export default class Button extends Component {
   }
 
   render() {
-    const { orangeColor, buttonContent } = this.props;
+    const { orangeColor, buttonContent, span } = this.props;
     return (
       <button
         onClick={this.handleCalulatorInput}
-        className={`button ${orangeColor ? 'orange' : 'grey'}`}
+        className={`button ${orangeColor ? 'orange' : 'grey'} ${span ? `span-${span}` : ''}`}
         type="button"
       >
         {buttonContent}
@@ -31,8 +31,10 @@ Button.propTypes = {
   handleCalulatorInput: PropTypes.func.isRequired,
   buttonContent: PropTypes.string.isRequired,
   orangeColor: PropTypes.bool,
+  span: PropTypes.number,
 };
 
 Button.defaultProps = {
   orangeColor: false,
+  span: 1,
 };
