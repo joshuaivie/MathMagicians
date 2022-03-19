@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> The Math Magicians Application is a front end aplication build using the React Library. In this project I explore the use of class components, functional components, compnent lifecycle, event handling, lifting state and react hooks.
+> The Math Magicians Application is a front end application build using the React Library. In this project I explore the use of class components, functional components, component lifecycle, event handling, lifting state and react hooks.
 
 > I hope you enjoy taking it for a spin
 
