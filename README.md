@@ -2,13 +2,15 @@
 
 # Math Magicians
 
-![screenshot]()
+> The Math Magicians Application is a front end aplication build using the React Library. In this project I explore the use of class components, functional components, compnent lifecycle, event handling, lifting state and react hooks.
 
->
+> I hope you enjoy taking it for a spin
+
+![screenshot](./public/calculator.gif)
 
 ## Live Demo
 
-[Live Demo Link]()
+[Math Magicians App](https://joshuaivie.github.io/MathMagicians)
 
 ## Built With
 
