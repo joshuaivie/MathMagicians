@@ -1,5 +1,6 @@
-/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import Display from './Display';
+import Button from './Button';
 import './Calculator.scss';
 import calculate from '../logic/calculate';
 
@@ -36,23 +37,11 @@ export default class Calculator extends Component {
 
   render() {
     const { display } = this.state;
+
     return (
       <div className="calculator">
-        <div
-          className="display span-4"
-          id="display"
-          type="text"
-          disabled
-        >
-          {display || '0'}
-        </div>
-        <button
-          onClick={this.handleCalulatorInput}
-          className="button grey"
-          type="button"
-        >
-          AC
-        </button>
+        <Display display={display} />
+        <Button handleCalulatorInput={this.handleCalulatorInput} buttonContent="AC" />
         <button
           onClick={this.handleCalulatorInput}
           className="button grey"
