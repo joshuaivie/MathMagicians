@@ -1,11 +1,21 @@
-import Calculator from './Calculator';
+import {
+  Routes,
+  Route,
+} from 'react-router-dom';
 
-function App() {
+import Layout from './Layout/Layout';
+import Home from '../pages/Home';
+import Quotes from '../pages/Quotes';
+import Calculator from '../pages/Calculator';
+
+export default function App() {
   return (
-    <div className="App">
-      <Calculator />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/calculator" exact element={<Calculator />} />
+        <Route path="/quote" exact element={<Quotes />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Layout>
   );
 }
-
-export default App;
