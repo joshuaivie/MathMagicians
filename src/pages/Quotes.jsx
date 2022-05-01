@@ -23,7 +23,7 @@ function Quotes() {
       })
       .then((data) => {
         const quoteLength = data.length;
-        const quoteIndex = Math.floor((Math.random() * quoteLength - 1) + 0);
+        const quoteIndex = Math.floor((Math.random() * (quoteLength - 1)) + 0);
         setCurrentQuote(data[quoteIndex]);
       })
       .catch((error) => {

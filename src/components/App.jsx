@@ -14,7 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/calculator" exact element={<Calculator />} />
         <Route path="/quote" exact element={<Quotes />} />
-        <Route path="/" element={<Home />} />
+        <Route index path="*" element={<Home />} />
       </Routes>
     </Layout>
   );
